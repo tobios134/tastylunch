@@ -7,7 +7,6 @@
  ],
  "minimoViandas": 10,
  "todosConGuarnicion": false,
- "fotoPorDefecto": "assets/img/viandas/pollo-al-horno.jpg",
  "fotos": {
   "estofado-de-osobuco-con-guarnicion": "assets/img/viandas/estofado-de-osobuco.jpg",
   "pastel-de-papa": "assets/img/viandas/pastel-de-papa.jpg",
