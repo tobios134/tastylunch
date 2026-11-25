@@ -1,0 +1,77 @@
+{
+  "negocio": "Tasty Lunch",
+  "slogan": {
+    "general": "Sabores para cada momento",
+    "viandas": "Tu semana resuelta, con sabor casero",
+    "catering": "Tenemos el catering ideal para cada ocasión especial"
+  },
+  "whatsapp": "5491126768006",
+  "whatsappVisible": "+54 9 11 2676-8006",
+  "email": "tastylunch@hotmail.com",
+  "redes": {
+    "instagramViandas": {
+      "usuario": "viandasycateringtl",
+      "url": "https://www.instagram.com/viandasycateringtl"
+    },
+    "instagramEmpresas": {
+      "usuario": "viandasparaempresastl",
+      "url": "https://www.instagram.com/viandasparaempresastl"
+    },
+    "tiktok": {
+      "usuario": "tastylunch3",
+      "url": "https://www.tiktok.com/@tastylunch3"
+    },
+    "facebook": {
+      "usuario": "tastylunchcatering",
+      "url": "https://www.facebook.com/tastylunchcatering"
+    }
+  },
+  "resenasUrl": "https://share.google/FzieDBLaUd5i66q4v",
+  "retiro": {
+    "direccion": "Calle Treinta y Tres 5256, Villa Ballester",
+    "horario": "de 9 a 20 hs, con cita previa",
+    "nota": "Punto de retiro, no es un local a la calle. Solo catering."
+  },
+  "viandas": {
+    "zonas": [
+      "CABA",
+      "Zona Norte",
+      "Zona Oeste"
+    ],
+    "diasAnticipacion": 2,
+    "entrega": {
+      "2": {
+        "nombre": "martes",
+        "desde": 10,
+        "hasta": 19
+      },
+      "3": {
+        "nombre": "miércoles",
+        "desde": 10,
+        "hasta": 16
+      },
+      "4": {
+        "nombre": "jueves",
+        "desde": 10,
+        "hasta": 19
+      },
+      "5": {
+        "nombre": "viernes",
+        "desde": 10,
+        "hasta": 19
+      }
+    },
+    "senaPorcentaje": 30
+  },
+  "catering": {
+    "temporada": "Diciembre – Enero 2026/27",
+    "zonas": [
+      "CABA",
+      "Zona Norte",
+      "Zona Oeste",
+      "Zona Sur"
+    ],
+    "anticipacionMinDias": 10,
+    "anticipacionMaxMeses": 2
+  }
+}

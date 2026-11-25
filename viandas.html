@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viandas | Tasty Lunch</title>
+  <meta name="description" content="Armá tu pedido de viandas caseras: clásicas, light, tartas y ensaladas. Packs con precio especial y envío sin cargo en CABA, Zona Norte y Oeste.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main>
+    <section class="pagina-titulo">
+      <div class="contenedor">
+        <h1>Viandas</h1>
+        <p id="intro">Elegí tus platos, armá tu pack y envialo por WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="seccion alt" style="padding-block:1.5rem">
+      <div class="contenedor">
+        <div class="packs" id="packs"></div>
+      </div>
+    </section>
+
+    <div class="filtros">
+      <div class="contenedor">
+        <div class="filtros-fila">
+          <label class="solo-lectores" for="buscar">Buscar plato</label>
+          <input class="buscador" id="buscar" type="search" placeholder="Buscar plato (ej. pollo, tarta, calabaza)">
+        </div>
+        <div class="filtros-fila"><span class="etq">Tipo</span><span id="f-tipo"></span></div>
+        <div class="filtros-fila"><span class="etq">Proteína</span><span id="f-prot"></span></div>
+      </div>
+    </div>
+
+    <section class="seccion" style="padding-top:.5rem">
+      <div class="contenedor">
+        <p class="contador" id="contador"></p>
+        <div class="grilla" id="grilla"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="barra-carrito" id="barra">
+    <div class="contenedor">
+      <div class="barra-info"><span id="barra-txt"></span><small id="barra-sub"></small></div>
+      <button class="btn btn-claro" id="abrir-carrito" type="button">Ver mi pedido</button>
+    </div>
+  </div>
+
+  <div class="fondo-drawer" id="fondo"></div>
+  <aside class="drawer" id="drawer" aria-label="Mi pedido" aria-hidden="true">
+    <div class="drawer-cab"><h2>Mi pedido</h2><button class="cerrar" id="cerrar" type="button" aria-label="Cerrar">×</button></div>
+    <div class="drawer-cuerpo" id="drawer-cuerpo"></div>
+    <div class="drawer-pie">
+      <div id="avisos"></div>
+      <button class="btn btn-whats" id="enviar" type="button" style="width:100%">Enviar pedido por WhatsApp</button>
+    </div>
+  </aside>
+
+  <script type="module" src="js/viandas.js"></script>
+</body>
+</html>

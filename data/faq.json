@@ -1,0 +1,67 @@
+[
+  {
+    "seccion": "Viandas",
+    "pregunta": "¿Cuál es el pedido mínimo?",
+    "respuesta": "El pedido mínimo es de 10 viandas, ya sea en pack o sueltas. Podés mezclar los platos que quieras."
+  },
+  {
+    "seccion": "Viandas",
+    "pregunta": "¿Cuánto cuesta cada vianda y cómo funcionan los packs?",
+    "respuesta": "Cada vianda cuesta $12.000. Los packs de 10, 14, 21 y 30 viandas tienen un precio fijo más conveniente. La web calcula sola el mejor precio para la cantidad que elijas combinando packs y viandas sueltas."
+  },
+  {
+    "seccion": "Viandas",
+    "pregunta": "¿Cuánto pesa cada vianda?",
+    "respuesta": "Todas las viandas pesan 500 gramos."
+  },
+  {
+    "seccion": "Viandas",
+    "pregunta": "¿Puedo cambiar la guarnición?",
+    "respuesta": "Sí, en los platos que vienen con guarnición podés elegir entre todas las opciones disponibles, sin costo extra."
+  },
+  {
+    "seccion": "Viandas",
+    "pregunta": "¿Qué días y en qué horarios entregan las viandas?",
+    "respuesta": "Entregamos martes de 10 a 19, miércoles de 10 a 16, jueves de 10 a 19 y viernes de 10 a 19. Podés hacer tu pedido todos los días."
+  },
+  {
+    "seccion": "Viandas",
+    "pregunta": "¿A qué zonas llegan y cuánto cuesta el envío?",
+    "respuesta": "Entregamos viandas en CABA, Zona Norte y Zona Oeste. El envío no tiene costo, está incluido."
+  },
+  {
+    "seccion": "Viandas",
+    "pregunta": "¿Cómo se paga el pedido de viandas?",
+    "respuesta": "Con transferencia o efectivo, pedimos una seña del 30% y el resto se abona contra entrega. Con tarjeta, se abona el 100% por link de pago."
+  },
+  {
+    "seccion": "Catering",
+    "pregunta": "¿Con cuánta anticipación tengo que reservar?",
+    "respuesta": "Con un mínimo de 10 días y un máximo de 2 meses de anticipación."
+  },
+  {
+    "seccion": "Catering",
+    "pregunta": "¿Cómo se paga el catering?",
+    "respuesta": "Con transferencia, con una seña del 50%. Con tarjeta de crédito o débito, abonando el 100%. También hay 3 y 6 cuotas sin interés (tienen recargo)."
+  },
+  {
+    "seccion": "Catering",
+    "pregunta": "¿Hacen envíos de catering?",
+    "respuesta": "Sí, a CABA, Zona Norte, Zona Oeste y Zona Sur. Consultá el costo del envío por WhatsApp."
+  },
+  {
+    "seccion": "Catering",
+    "pregunta": "¿Puedo retirar mi pedido?",
+    "respuesta": "Sí. Podés pasar a señar, abonar y retirar por nuestro punto de retiro en Calle Treinta y Tres 5256, Villa Ballester, de 9 a 20 hs, con cita previa. No es un local a la calle."
+  },
+  {
+    "seccion": "Catering",
+    "pregunta": "¿Cuál es la cantidad mínima de cada pieza?",
+    "respuesta": "Cada pieza se pide por bandeja, con la cantidad indicada (por ejemplo, 24 empanadas o 30 sándwiches). Los gustos y rellenos son a elección entre los indicados en cada opción."
+  },
+  {
+    "seccion": "General",
+    "pregunta": "¿Emiten factura?",
+    "respuesta": "Somos monotributistas y realizamos factura C."
+  }
+]

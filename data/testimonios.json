@@ -1,0 +1,4 @@
+{
+  "_nota": "Agregar testimonios reales como { \"nombre\": \"Nombre\", \"detalle\": \"Empresa o evento (opcional)\", \"texto\": \"Opinion del cliente\" }. Mientras la lista este vacia, la web solo muestra el boton de resenas de Google.",
+  "testimonios": []
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catering | Tasty Lunch</title>
+  <meta name="description" content="Catering para eventos: combos para 10 a 15 personas o más de 20, braseados, picadas y piezas por bandeja. Pedí tu presupuesto por WhatsApp.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main>
+    <section class="pagina-titulo">
+      <div class="contenedor">
+        <h1>Catering</h1>
+        <p id="intro"></p>
+      </div>
+    </section>
+
+    <section class="seccion" style="padding-top:1.2rem">
+      <div class="contenedor">
+        <p class="aviso" id="aviso"></p>
+        <div class="pestanas" role="tablist" id="pestanas"></div>
+        <div id="paneles"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="barra-carrito" id="barra">
+    <div class="contenedor">
+      <div class="barra-info"><span id="barra-txt"></span><small>Total estimado</small></div>
+      <button class="btn btn-claro" id="abrir-carrito" type="button">Ver mi pedido</button>
+    </div>
+  </div>
+
+  <div class="fondo-drawer" id="fondo"></div>
+  <aside class="drawer" id="drawer" aria-label="Mi pedido de catering" aria-hidden="true">
+    <div class="drawer-cab"><h2>Mi pedido de catering</h2><button class="cerrar" id="cerrar" type="button" aria-label="Cerrar">×</button></div>
+    <div class="drawer-cuerpo" id="drawer-cuerpo"></div>
+    <div class="drawer-pie">
+      <div id="avisos"></div>
+      <button class="btn btn-whats" id="enviar" type="button" style="width:100%">Pedir presupuesto por WhatsApp</button>
+    </div>
+  </aside>
+
+  <script type="module" src="js/catering.js"></script>
+</body>
+</html>

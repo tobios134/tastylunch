@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tasty Lunch | Viandas y catering en CABA y GBA</title>
+  <meta name="description" content="Viandas caseras con envío sin cargo y catering para eventos en CABA, Zona Norte, Oeste y Sur. Armá tu pedido y envialo por WhatsApp.">
+  <meta property="og:title" content="Tasty Lunch | Viandas y catering">
+  <meta property="og:description" content="Viandas caseras y catering para cada ocasión especial.">
+  <meta property="og:image" content="assets/img/portada.jpg">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="contenedor hero-grid">
+        <div>
+          <span class="eyebrow">Viandas y catering</span>
+          <h1><span id="lema">Sabores para cada momento</span></h1>
+          <p class="sub">Viandas caseras para tu semana y catering para tus ocasiones especiales. Armá tu pedido y envialo por WhatsApp.</p>
+          <div class="hero-botones">
+            <a class="btn btn-primario" href="viandas.html">Armar mis viandas</a>
+            <a class="btn btn-secundario" href="catering.html">Ver catering</a>
+          </div>
+        </div>
+        <div class="hero-visual"><img src="assets/img/portada.jpg" alt="Sándwiches de jamón crudo, queso y rúcula de Tasty Lunch" width="1050" height="1400" fetchpriority="high"></div>
+      </div>
+    </section>
+
+    <div class="contenedor"><div class="cifras" id="cifras"></div></div>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="seccion-cabecera">
+          <span class="eyebrow">Viandas</span>
+          <h2>Así de fácil</h2>
+          <p id="sl-viandas"></p>
+        </div>
+        <div class="pasos">
+          <div class="paso"><div class="num">01</div><h3>Elegí tus platos</h3><p>Más de 80 opciones: clásicas, light, tartas y ensaladas, con la guarnición que quieras.</p></div>
+          <div class="paso"><div class="num">02</div><h3>Armá tu pack</h3><p>Mínimo 10 viandas. Cuantas más sumás, mejor precio. La web calcula todo sola.</p></div>
+          <div class="paso"><div class="num">03</div><h3>Envialo por WhatsApp</h3><p>Tu pedido llega a nosotros ya armado. Coordinamos y listo.</p></div>
+          <div class="paso"><div class="num">04</div><h3>Te lo llevamos</h3><p>Entrega sin costo en CABA, Zona Norte y Zona Oeste, de martes a viernes.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion alt">
+      <div class="contenedor">
+        <div class="seccion-cabecera">
+          <span class="eyebrow">Packs</span>
+          <h2>Más viandas, mejor precio</h2>
+          <p id="packs-sub"></p>
+        </div>
+        <div class="packs" id="packs"></div>
+        <p style="margin-top:2rem"><a class="btn btn-primario" href="viandas.html">Elegir mis viandas</a></p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor dos-col">
+        <div>
+          <span class="eyebrow">Catering</span>
+          <h2>Para cada ocasión especial</h2>
+          <p id="sl-catering" style="color:var(--texto-suave)"></p>
+          <p>Combos para 10 a 15 personas o más de 20, braseados, picadas y piezas por bandeja. Armá tu pedido o pedí un presupuesto a medida.</p>
+          <p class="aviso">Reservá con 10 días de anticipación como mínimo y hasta 2 meses antes.</p>
+          <a class="btn btn-primario" href="catering.html">Ver catering</a>
+        </div>
+        <div class="tarjeta">
+          <h3>Zonas de entrega</h3>
+          <p><strong>Viandas</strong> (envío sin costo)</p>
+          <ul class="zonas" id="zonas-viandas"></ul>
+          <p><strong>Catering</strong> (consultá el costo del envío)</p>
+          <ul class="zonas" id="zonas-catering"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion alt">
+      <div class="contenedor">
+        <div class="seccion-cabecera">
+          <span class="eyebrow">Opiniones</span>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+        <div class="testimonios" id="testimonios"></div>
+        <a class="btn btn-secundario" id="btn-resenas" href="#" target="_blank" rel="noopener">Ver reseñas en Google</a>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="seccion-cabecera"><span class="eyebrow">Seguinos</span><h2>Mirá lo que cocinamos</h2></div>
+        <div class="redes" id="redes"></div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>

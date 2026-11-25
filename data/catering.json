@@ -1,0 +1,383 @@
+{
+  "_nota": "Catalogo de catering. Cada item: id, nombre, detalle, precio y unidad. En 'piezas' el precio es por bandeja de la cantidad indicada.",
+  "galeria": [
+    {
+      "archivo": "assets/img/catering/sandwiches-en-caja.jpg",
+      "alt": "Caja de sandwichitos de pan saborizado"
+    },
+    {
+      "archivo": "assets/img/catering/figacitas-jamon-crudo.jpg",
+      "alt": "Figacitas de jamón crudo, queso y rúcula"
+    },
+    {
+      "archivo": "assets/img/catering/scones-jamon-crudo.jpg",
+      "alt": "Scones de queso rellenos de jamón crudo y rúcula"
+    },
+    {
+      "archivo": "assets/img/catering/pizzetas.jpg",
+      "alt": "Pizzetas de tomate y jamón"
+    },
+    {
+      "archivo": "assets/img/catering/pan-arabe.jpg",
+      "alt": "Pan árabe relleno de jamón crudo, queso y rúcula"
+    },
+    {
+      "archivo": "assets/img/catering/pionono.jpg",
+      "alt": "Arrolladitos de pionono"
+    }
+  ],
+  "combos10a15": {
+    "titulo": "Para 10 a 15 personas",
+    "descripcion": "Combos armados con precio total.",
+    "items": [
+      {
+        "id": "c10-1",
+        "nombre": "Opción 1",
+        "precio": 191000,
+        "detalle": [
+          "30 empanadas (carne, pollo, jamón y queso, caprese, cebolla y queso)",
+          "30 pizzetas (muzzarella, cebolla, jamón y morrones, jamón, napolitana, aceitunas, huevo duro, salchichas)",
+          "30 fosforitos de jamón y queso",
+          "30 sándwiches (figacitas o pan negro): pollo al verdeo; jamón crudo, rúcula y queso; fiambre de bondiola, queso y mostaza"
+        ]
+      },
+      {
+        "id": "c10-2",
+        "nombre": "Opción 2",
+        "precio": 233000,
+        "detalle": [
+          "Pernil de cerdo, carne braseada o bondiola braseada (elegir 1)",
+          "60 figacitas + 2 salsas",
+          "30 piezas a elección",
+          "30 piezas a elección",
+          "Piezas a elegir: empanadas, pizzetas, fosforitos, sándwiches, chips o miniburguers"
+        ]
+      },
+      {
+        "id": "c10-3",
+        "nombre": "Opción 3",
+        "precio": 250000,
+        "detalle": [
+          "Carne braseada al vino + 60 figacitas + 2 salsas",
+          "30 sándwiches (figacitas o pan negro): pollo al verdeo; jamón crudo, rúcula y queso; fiambre de bondiola, queso y mostaza",
+          "20 brochetas de carne, pollo y/o cerdo + verduras"
+        ]
+      },
+      {
+        "id": "c10-4",
+        "nombre": "Opción 4",
+        "precio": 241000,
+        "detalle": [
+          "40 sacramentos rellenos especiales",
+          "20 brochetas de carne, pollo y/o cerdo + verduras",
+          "20 miniburguers con cheddar, lechuga y tomate (carne y/o lenteja)",
+          "20 pinchos de pollo rebozado con salsa agridulce"
+        ]
+      },
+      {
+        "id": "c10-5",
+        "nombre": "Opción 5",
+        "precio": 298000,
+        "detalle": [
+          "30 sándwiches (figacitas o pan negro)",
+          "30 arrolladitos de pionono",
+          "40 sacramentos rellenos",
+          "30 scones de queso rellenos"
+        ]
+      }
+    ]
+  },
+  "combos20mas": {
+    "titulo": "Para 20 personas o más",
+    "descripcion": "Precio aproximado por persona (efectivo, transferencia o tarjeta).",
+    "personasMin": 20,
+    "items": [
+      {
+        "id": "c20-1",
+        "nombre": "Opción 1",
+        "precio": 13000,
+        "detalle": [
+          "Pernil de cerdo, bondiola braseada o carne braseada (elegir una) + figacitas + salsas",
+          "Empanadas",
+          "Pizzetas",
+          "Fosforitos de jamón y queso",
+          "Chips"
+        ]
+      },
+      {
+        "id": "c20-2",
+        "nombre": "Opción 2",
+        "precio": 14000,
+        "detalle": [
+          "Picada: 3 tipos de queso, bondiola, jamón crudo, jamón cocido, lomito a las finas hierbas, roquefort, queso saborizado con pimentón, leberwurst, cantimpalo, salame, salamín",
+          "Pan blanco e integral, pinchos y tabla",
+          "Pernil de cerdo, bondiola braseada o carne braseada (elegir una) + figacitas + salsas"
+        ]
+      },
+      {
+        "id": "c20-3",
+        "nombre": "Opción 3",
+        "precio": 17000,
+        "detalle": [
+          "Picada completa con pan blanco e integral, pinchos y tabla",
+          "Empanadas",
+          "Pizzetas",
+          "Fosforitos de jamón y queso",
+          "Chips"
+        ]
+      },
+      {
+        "id": "c20-4",
+        "nombre": "Opción 4",
+        "precio": 17000,
+        "detalle": [
+          "Sándwiches (figacitas o pan negro)",
+          "Sacramentos rellenos",
+          "Empanadas clásicas",
+          "Pinchos de pollo rebozado",
+          "Arrolladitos de pionono"
+        ]
+      },
+      {
+        "id": "c20-5",
+        "nombre": "Opción 5",
+        "precio": 19000,
+        "detalle": [
+          "Miniburguers (1 por persona)",
+          "Brochetas (2 por persona)",
+          "Sacramentos rellenos (1 por persona)",
+          "Tortitas negras rellenas (1 por persona)",
+          "Sándwiches especiales (1 por persona)",
+          "Pan árabe relleno (1 por persona)",
+          "Empanadas (2 por persona)"
+        ]
+      }
+    ]
+  },
+  "braseados": {
+    "titulo": "Pernil, bondiola y carne braseada",
+    "descripcion": "Cada combo incluye figacitas y salsas.",
+    "carnes": [
+      {
+        "id": "pernil",
+        "nombre": "Pernil de cerdo",
+        "nota": "Se cocina por 7 horas, adobado con hierbas, limón y sal.",
+        "precios": {
+          "10": 110000,
+          "20": 130000,
+          "25": 155000,
+          "30": 177000,
+          "40": 199000
+        }
+      },
+      {
+        "id": "bondiola",
+        "nombre": "Bondiola braseada",
+        "nota": "Se cocina con morrones, cebolla y especias. A la cerveza.",
+        "precios": {
+          "10": 124000,
+          "20": 149000,
+          "25": 159000,
+          "30": 179000,
+          "40": 205000
+        }
+      },
+      {
+        "id": "carne",
+        "nombre": "Carne braseada",
+        "nota": "La carne (rosbif) se cocina con morrones, cebolla y especias. Al vino.",
+        "precios": {
+          "10": 148000,
+          "20": 185000,
+          "25": 199000,
+          "30": 227000,
+          "40": 255000
+        }
+      }
+    ],
+    "tamanos": {
+      "10": "60 figacitas + 2 salsas",
+      "20": "100 figacitas + 3 salsas",
+      "25": "125 figacitas + 4 salsas",
+      "30": "150 figacitas + 5 salsas",
+      "40": "200 figacitas + 6 salsas"
+    }
+  },
+  "picada": {
+    "id": "picada",
+    "nombre": "Picada",
+    "precio": 10000,
+    "personasMin": 20,
+    "detalle": "Para 20 personas o más. Lomito a las finas hierbas, jamón cocido, fiambre de bondiola, queso saborizado con pimentón, roquefort, salame, jamón crudo, leberwurst, cantimpalo y 3 tipos de quesos, con tabla, palillos y pan."
+  },
+  "piezas": {
+    "titulo": "Armá tu pedido por piezas",
+    "descripcion": "Cada bandeja viene con la cantidad indicada. Los gustos son a elección entre los indicados en cada opción.",
+    "grupos": [
+      {
+        "nombre": "Piezas frías",
+        "items": [
+          {
+            "id": "f-sand-cla",
+            "nombre": "Sándwiches clásicos (figacitas o pan negro)",
+            "cantidad": 30,
+            "precio": 57000,
+            "detalle": "Pollo al verdeo. Jamón crudo, rúcula y queso. Fiambre de bondiola, queso y mostaza."
+          },
+          {
+            "id": "f-sand-esp",
+            "nombre": "Sándwiches especiales (figacitas o pan negro)",
+            "cantidad": 30,
+            "precio": 69000,
+            "detalle": "Blanco de ave, tomate y huevo. Peceto, lechuga, tomate y huevo."
+          },
+          {
+            "id": "f-sand-veg",
+            "nombre": "Sándwiches vegetarianos (figacitas o pan negro)",
+            "cantidad": 30,
+            "precio": 42000,
+            "detalle": "Caprese. Queso, tomate y rúcula. Berenjenas al escabeche. Vegetales asados (berenjena, zucchini y tomate) y queso."
+          },
+          {
+            "id": "f-sacr-esp",
+            "nombre": "Sacramentos rellenos especiales",
+            "cantidad": 40,
+            "precio": 96000,
+            "detalle": "Jamón crudo, rúcula y queso. Jamón crudo y queso. Mousse de roquefort y peras caramelizadas. Mousse de roquefort y nuez. Lomito a las finas hierbas y queso. Blanco de ave, tomate, queso y huevo duro."
+          },
+          {
+            "id": "f-pinchos-muzza",
+            "nombre": "Pinchos de muzzarella, tomate y pesto",
+            "cantidad": 20,
+            "precio": 28000,
+            "detalle": ""
+          },
+          {
+            "id": "f-arabe-crudo",
+            "nombre": "Pan árabe relleno de jamón crudo, rúcula y queso",
+            "cantidad": 20,
+            "precio": 38000,
+            "detalle": ""
+          },
+          {
+            "id": "f-pionono",
+            "nombre": "Arrolladitos de pionono",
+            "cantidad": 30,
+            "precio": 69000,
+            "detalle": "Mousse de queso azul (roquefort, mayonesa y queso crema), nuez y apio. Atún, mayonesa, morrones asados y aceitunas. Pollo al verdeo."
+          }
+        ]
+      },
+      {
+        "nombre": "Piezas calientes",
+        "items": [
+          {
+            "id": "c-miniburguer",
+            "nombre": "Miniburguers",
+            "cantidad": 20,
+            "precio": 58000,
+            "detalle": "Con cheddar, lechuga y tomate. Medallón de carne y/o lenteja."
+          },
+          {
+            "id": "c-fosforitos",
+            "nombre": "Fosforitos de jamón y queso",
+            "cantidad": 30,
+            "precio": 51000,
+            "detalle": ""
+          },
+          {
+            "id": "c-chips-cla",
+            "nombre": "Chips clásicos",
+            "cantidad": 30,
+            "precio": 45000,
+            "detalle": "Rellenos: jamón y queso. Salame y queso. Tomate y queso. Rúcula, tomate y queso. Caprese."
+          },
+          {
+            "id": "c-chips-esp",
+            "nombre": "Chips especiales de jamón crudo, rúcula y queso",
+            "cantidad": 30,
+            "precio": 51000,
+            "detalle": ""
+          },
+          {
+            "id": "c-brochetas",
+            "nombre": "Brochetas",
+            "cantidad": 20,
+            "precio": 58000,
+            "detalle": "De carne, pollo y/o cerdo + verduras."
+          },
+          {
+            "id": "c-tortitas",
+            "nombre": "Tortitas negras rellenas",
+            "cantidad": 30,
+            "precio": 69000,
+            "detalle": "De jamón crudo y queso. Jamón y queso."
+          },
+          {
+            "id": "c-pancitos",
+            "nombre": "Sándwiches de pancitos saborizados",
+            "cantidad": 30,
+            "precio": 66000,
+            "detalle": "Saborizados de: orégano, cebolla, salame, queso, verdeo, ajo, pimentón ahumado. Rellenos: jamón y queso, salame y queso, caprese, tomate y queso."
+          },
+          {
+            "id": "c-canastitas",
+            "nombre": "Canastitas",
+            "cantidad": 24,
+            "precio": 43000,
+            "detalle": "Calabaza y queso, cebolla y queso, espinaca y salsa blanca, jamón y queso, caprese, humita, puerro y queso, pollo y queso."
+          },
+          {
+            "id": "c-emp-cla",
+            "nombre": "Empanadas clásicas",
+            "cantidad": 24,
+            "precio": 43200,
+            "detalle": "Carne, pollo, jamón y queso, caprese, cebolla y queso."
+          },
+          {
+            "id": "c-emp-esp",
+            "nombre": "Empanadas especiales",
+            "cantidad": 24,
+            "precio": 57000,
+            "detalle": "Carne, pollo, jamón y queso, caprese, cebolla y queso, roquefort y nuez, humita, espinaca y salsa blanca, atún y cebolla."
+          },
+          {
+            "id": "c-sacr",
+            "nombre": "Sacramentos rellenos",
+            "cantidad": 40,
+            "precio": 57000,
+            "detalle": "Jamón y queso. Salame y queso. Caprese. Jamón, queso y tomate."
+          },
+          {
+            "id": "c-pinchos-pollo",
+            "nombre": "Pinchos de pollo rebozado",
+            "cantidad": 20,
+            "precio": 40000,
+            "detalle": ""
+          },
+          {
+            "id": "c-arabe-berenjena",
+            "nombre": "Pan árabe relleno de milanesa de berenjena, tomate y cebolla caramelizada",
+            "cantidad": 20,
+            "precio": 38000,
+            "detalle": ""
+          },
+          {
+            "id": "c-scones",
+            "nombre": "Scones de queso rellenos",
+            "cantidad": 30,
+            "precio": 69000,
+            "detalle": "Jamón y queso. Fiambre de bondiola y queso. Jamón crudo y queso. Crudo, queso y rúcula."
+          },
+          {
+            "id": "c-pizzetas",
+            "nombre": "Pizzetas",
+            "cantidad": 30,
+            "precio": 36000,
+            "detalle": "Muzzarella, cebolla, jamón y morrones, jamón, napolitana (tomate y ajo), aceitunas, huevo duro, salchichas."
+          }
+        ]
+      }
+    ]
+  }
+}

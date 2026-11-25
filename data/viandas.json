@@ -1,0 +1,922 @@
+{
+ "_nota": "Datos de viandas. Editar precios/packs aqui. Los platos se generan desde menu_tasty.xlsx. Para agregar foto a un plato: \"foto\": \"assets/img/viandas/archivo.jpg\"",
+ "precioUnitario": 12000,
+ "pesoGramos": 500,
+ "minimoViandas": 10,
+ "todosConGuarnicion": false,
+ "fotoPorDefecto": "assets/img/viandas/pollo-al-horno.jpg",
+ "fotos": {
+  "estofado-de-osobuco-con-guarnicion": "assets/img/viandas/estofado-de-osobuco.jpg",
+  "pastel-de-papa": "assets/img/viandas/pastel-de-papa.jpg",
+  "pollo-a-la-toscana-crema-de-espinaca-tomate-y-queso-con-guarnicion": "assets/img/viandas/pollo-a-la-toscana.jpg",
+  "pollo-al-horno-pata-y-muslo-sin-piel-con-guarnicion": "assets/img/viandas/pollo-al-horno.jpg"
+ },
+ "packs": [
+  {
+   "cantidad": 10,
+   "precio": 105000
+  },
+  {
+   "cantidad": 14,
+   "precio": 131000
+  },
+  {
+   "cantidad": 21,
+   "precio": 189000
+  },
+  {
+   "cantidad": 30,
+   "precio": 255000
+  }
+ ],
+ "tipos": [
+  "Clásico",
+  "Light",
+  "Tarta",
+  "Pasta",
+  "Ensaladas"
+ ],
+ "proteinas": [
+  "Vegetariano",
+  "Pollo",
+  "Carne",
+  "Cerdo",
+  "Pescado"
+ ],
+ "guarniciones": [
+  {
+   "nombre": "Vegetales asados",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Puré de calabaza",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Calabaza asada",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Brócoli salteado",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Coliflor salteado",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Milhojas de papa",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Papas asadas",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Croquetas de zanahoria y zucchini",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Batatas asadas",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Puré de batata",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Revuelto de zapallitos",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Puré mixto",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Espinaca y salsa blanca gratinada",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Puré de papa",
+   "tipo": "Otro"
+  },
+  {
+   "nombre": "Ensalada de lechuga y tomate",
+   "tipo": "Otro"
+  },
+  {
+   "nombre": "Ensalada de zanahoria y huevo",
+   "tipo": "Otro"
+  },
+  {
+   "nombre": "Ensalada de remolacha y huevo",
+   "tipo": "Otro"
+  },
+  {
+   "nombre": "Arroz blanco",
+   "tipo": "Otro"
+  },
+  {
+   "nombre": "Arroz con vegetales",
+   "tipo": "Otro"
+  },
+  {
+   "nombre": "Papas con perejil",
+   "tipo": "Otro"
+  },
+  {
+   "nombre": "Papa, huevo y mayonesa",
+   "tipo": "Otro"
+  },
+  {
+   "nombre": "Papas fritas",
+   "tipo": "Otro"
+  },
+  {
+   "nombre": "Brócoli al vapor",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Croquetas de brócoli",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Croquetas de espinaca",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Papa y batata",
+   "tipo": "Ideal para congelar"
+  },
+  {
+   "nombre": "Ensalada mixta",
+   "tipo": "Otro"
+  },
+  {
+   "nombre": "Espinaca y huevo",
+   "tipo": "Otro"
+  },
+  {
+   "nombre": "Pasta",
+   "tipo": "Otro"
+  }
+ ],
+ "platos": [
+  {
+   "id": "pollo-pata-y-muslo-al-verdeo-con-guarnicion",
+   "nombre": "Pollo (pata y muslo) al verdeo con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "pollo-a-la-toscana-crema-de-espinaca-tomate-y-queso-con-guarnicion",
+   "nombre": "Pollo a la toscana (crema de espinaca, tomate y queso) con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "arrollado-de-pollo-relleno-con-vegetales-con-guarnicion",
+   "nombre": "Arrollado de pollo relleno con vegetales, con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "pastel-de-papa-con-lenteja",
+   "nombre": "Pastel de papa con lenteja",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "pastel-de-papa",
+   "nombre": "Pastel de papa",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": false
+  },
+  {
+   "id": "estofado-de-osobuco-con-guarnicion",
+   "nombre": "Estofado de osobuco con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "costillitas-de-cerdo-al-limon-con-guarnicion",
+   "nombre": "Costillitas de cerdo al limón con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "cerdo-a-la-barbacoa-con-guarnicion",
+   "nombre": "Cerdo a la barbacoa con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "budin-de-calabaza-espinaca-y-queso",
+   "nombre": "Budín de calabaza, espinaca y queso",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "tortilla-de-acelga",
+   "nombre": "Tortilla de acelga",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "souffle-de-zapallitos",
+   "nombre": "Souffle de zapallitos",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "milanesa-a-la-napolitana-de-carne-con-guarnicion",
+   "nombre": "Milanesa a la napolitana de carne con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "milanesa-a-la-napolitana-de-pollo-con-guarnicion",
+   "nombre": "Milanesa a la napolitana de pollo con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "tortilla-de-papa",
+   "nombre": "Tortilla de papa",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "bife-con-guarnicion",
+   "nombre": "Bife con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "pollo-grillado-con-guarnicion",
+   "nombre": "Pollo grillado con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "milanesa-de-berenjena-a-la-napolitana-con-guarnicion",
+   "nombre": "Milanesa de berenjena a la napolitana con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": true
+  },
+  {
+   "id": "milhojas-de-vegetales-y-queso",
+   "nombre": "Milhojas de vegetales y queso",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "croquetas-de-pollo-y-espinaca-con-guarnicion",
+   "nombre": "Croquetas de pollo y espinaca con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "canelones-de-verdura-y-ricota-con-salsa-fileto-y-salsa-blanca",
+   "nombre": "Canelones de verdura y ricota con salsa fileto y salsa blanca",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "albondigas-de-pollo-al-verdeo-con-guarnicion",
+   "nombre": "Albondigas de pollo al verdeo con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "pollo-a-la-miel-y-mostaza-con-guarnicion",
+   "nombre": "Pollo a la miel y mostaza con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "pan-de-carne-con-guarnicion",
+   "nombre": "Pan de carne con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "guiso-de-lentejas-y-carne",
+   "nombre": "Guiso de lentejas y carne",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": false
+  },
+  {
+   "id": "wok-de-vegetales-arroz-yamani-y-pollo",
+   "nombre": "Wok de vegetales, arroz yamani y pollo",
+   "tipo": "Light",
+   "proteina": "Pollo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "wok-de-vegetales-arroz-y-pollo",
+   "nombre": "Wok de vegetales, arroz y pollo",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "wok-de-vegetales-arroz-yamani-y-carne",
+   "nombre": "Wok de vegetales, arroz yamani y carne",
+   "tipo": "Light",
+   "proteina": "Carne",
+   "conGuarnicion": false
+  },
+  {
+   "id": "wok-de-vegetales-arroz-y-carne",
+   "nombre": "Wok de vegetales, arroz y carne",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": false
+  },
+  {
+   "id": "wok-de-vegetales-arroz-yamani-y-cerdo",
+   "nombre": "Wok de vegetales, arroz yamani y cerdo",
+   "tipo": "Light",
+   "proteina": "Cerdo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "wok-de-vegetales-arroz-y-cerdo",
+   "nombre": "Wok de vegetales, arroz y cerdo",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "pastel-de-bondiola-y-batata",
+   "nombre": "Pastel de bondiola y batata",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "noquis-de-calabaza-con-salsa-bolognesa",
+   "nombre": "Ñoquis de calabaza con salsa bolognesa",
+   "tipo": "Pasta",
+   "proteina": "Carne",
+   "conGuarnicion": false
+  },
+  {
+   "id": "croquetas-de-garbanzo-y-zanahoria-con-guarnicion",
+   "nombre": "Croquetas de garbanzo y zanahoria con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": true
+  },
+  {
+   "id": "guiso-de-bondiola-batatas-papas-y-vegetales",
+   "nombre": "Guiso de bondiola, batatas, papas y vegetales",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "churrasquitos-de-bondiola-con-guarnicion",
+   "nombre": "Churrasquitos de bondiola con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "carne-al-horno-con-guarnicion",
+   "nombre": "Carne al horno con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "zapallitos-rellenos-de-carne-picada-y-queso-con-guarnicion",
+   "nombre": "Zapallitos rellenos de carne picada y queso con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "pollo-pata-y-muslo-al-limon-y-miel-con-guarnicion",
+   "nombre": "Pollo (pata y muslo) al limón y miel con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "milanesa-de-pescado-con-guarnicion",
+   "nombre": "Milanesa de pescado con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pescado",
+   "conGuarnicion": true
+  },
+  {
+   "id": "agnolotis-de-calabaza-y-queso-con-salsa-fileto",
+   "nombre": "Agnolotis de calabaza y queso con salsa fileto",
+   "tipo": "Pasta",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "salteado-de-pasta-vegetales-y-pollo",
+   "nombre": "Salteado de pasta, vegetales y pollo",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "morron-relleno-de-carne-picada-y-queso-con-guarnicion",
+   "nombre": "Morrón relleno de carne picada y queso con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "pollo-al-limon-pata-y-muslo-con-guarnicion",
+   "nombre": "Pollo al limón (pata y muslo) con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "croquetas-de-atun-y-papa-con-guarnicion",
+   "nombre": "Croquetas de atún y papa con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pescado",
+   "conGuarnicion": true
+  },
+  {
+   "id": "bunuelos-de-acelga-banados-en-salsa-blanca-con-queso",
+   "nombre": "Buñuelos de acelga bañados en salsa blanca con queso",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "guiso-de-verduras-carne-y-pasta",
+   "nombre": "Guiso de verduras, carne y pasta",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": false
+  },
+  {
+   "id": "sorrentinos-de-jamon-y-queso-con-salsa-fileto",
+   "nombre": "Sorrentinos de jamón y queso con salsa fileto",
+   "tipo": "Pasta",
+   "proteina": "Cerdo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "albondigas-de-pollo-con-salsa-con-guarnicion",
+   "nombre": "Albondigas de pollo con salsa con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "guiso-de-lenteja-veggie",
+   "nombre": "Guiso de lenteja veggie",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "guiso-de-verduras-y-pasta",
+   "nombre": "Guiso de verduras y pasta",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "tallarines-al-huevo-con-estofado-de-carne",
+   "nombre": "Tallarines al huevo con estofado de carne",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": false
+  },
+  {
+   "id": "chorizo-a-la-pomarola-con-guarnicion",
+   "nombre": "Chorizo a la pomarola con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "estofado-de-carne-con-guarnicion",
+   "nombre": "Estofado de carne con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "agnolotis-de-ricota-jamon-y-queso-con-salsa-fileto",
+   "nombre": "Agnolotis de ricota, jamón y queso con salsa fileto",
+   "tipo": "Pasta",
+   "proteina": "Cerdo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "pollo-y-brocoli-cremoso-con-queso",
+   "nombre": "Pollo y brócoli cremoso con queso",
+   "tipo": "Light",
+   "proteina": "Pollo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "pollo-al-horno-pata-y-muslo-sin-piel-con-guarnicion",
+   "nombre": "Pollo al horno (pata y muslo sin piel) con guarnición",
+   "tipo": "Light",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "filet-de-merluza-al-horno-con-limon-con-guarnicion",
+   "nombre": "Filet de merluza al horno con limón con guarnición",
+   "tipo": "Light",
+   "proteina": "Pescado",
+   "conGuarnicion": true
+  },
+  {
+   "id": "souffle-de-vegetales-y-queso",
+   "nombre": "Souffle de vegetales y queso",
+   "tipo": "Light",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "crepes-de-puerro-y-queso-con-salsa-de-calabaza",
+   "nombre": "Crepes de puerro y queso con salsa de calabaza",
+   "tipo": "Light",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "papas-asadas-rellenas-de-espinaca-salsa-blanca-y-queso",
+   "nombre": "Papas asadas rellenas de espinaca, salsa blanca y queso",
+   "tipo": "Light",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "tarta-de-puerro-y-atun-sin-tapa",
+   "nombre": "Tarta de puerro y atún sin tapa",
+   "tipo": "Light",
+   "proteina": "Pescado",
+   "conGuarnicion": false
+  },
+  {
+   "id": "tarta-de-puerro-y-calabaza-sin-tapa",
+   "nombre": "Tarta de puerro y calabaza sin tapa",
+   "tipo": "Light",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "souffle-de-espinaca-y-ricota-con-queso",
+   "nombre": "Souffle de espinaca y ricota con queso",
+   "tipo": "Light",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "rolls-de-berenjena-rellenos-de-carne-picada-con-queso",
+   "nombre": "Rolls de berenjena rellenos de carne picada, con queso",
+   "tipo": "Light",
+   "proteina": "Carne",
+   "conGuarnicion": false
+  },
+  {
+   "id": "calabaza-asada-rellena-de-humita-y-queso",
+   "nombre": "Calabaza asada rellena de humita y queso",
+   "tipo": "Light",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "medallon-de-pollo-con-guarnicion",
+   "nombre": "Medallón de pollo con guarnición",
+   "tipo": "Light",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "lasagna-de-berenjenas-salsa-bolognesa-y-queso",
+   "nombre": "\"Lasagna\" de berenjenas, salsa bolognesa y queso",
+   "tipo": "Light",
+   "proteina": "Carne",
+   "conGuarnicion": false
+  },
+  {
+   "id": "pasta-con-pollo-y-salsa-de-espinaca",
+   "nombre": "Pasta con pollo y salsa de espinaca",
+   "tipo": "Light",
+   "proteina": "Pollo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "berenjena-rellena-de-pollo-y-verdeo-con-queso-con-guarnicion",
+   "nombre": "Berenjena rellena de pollo y verdeo con queso, con guarnición",
+   "tipo": "Light",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "falafels-sobre-colchon-de-salsa-de-tomate-y-queso",
+   "nombre": "Falafels sobre colchón de salsa de tomate y queso",
+   "tipo": "Light",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "medallon-de-carne-con-queso-y-tomate-con-guarnicion",
+   "nombre": "Medallón de carne con queso y tomate, con guarnición",
+   "tipo": "Light",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "bombas-de-calabaza-rellenas-de-queso-con-guarnicion",
+   "nombre": "Bombas de calabaza rellenas de queso, con guarnición",
+   "tipo": "Light",
+   "proteina": "Vegetariano",
+   "conGuarnicion": true
+  },
+  {
+   "id": "pastel-de-pollo-y-calabaza",
+   "nombre": "Pastel de pollo y calabaza",
+   "tipo": "Light",
+   "proteina": "Pollo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "wok-de-pollo-y-vegetales",
+   "nombre": "Wok de pollo y vegetales",
+   "tipo": "Light",
+   "proteina": "Pollo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "zucchinis-a-la-fugazzetta",
+   "nombre": "Zucchinis a la fugazzetta",
+   "tipo": "Light",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "atun-y-zapallitos",
+   "nombre": "Atún y zapallitos",
+   "tipo": "Tarta",
+   "proteina": "Pescado",
+   "conGuarnicion": false
+  },
+  {
+   "id": "jamon-queso-y-huevo",
+   "nombre": "Jamón, queso y huevo",
+   "tipo": "Tarta",
+   "proteina": "Cerdo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "puerro-cebolla-y-queso",
+   "nombre": "Puerro, cebolla y queso",
+   "tipo": "Tarta",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "calabaza-y-queso",
+   "nombre": "Calabaza y queso",
+   "tipo": "Tarta",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "brocoli-y-queso",
+   "nombre": "Brócoli y queso",
+   "tipo": "Tarta",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "humita-y-queso",
+   "nombre": "Humita y queso",
+   "tipo": "Tarta",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "acelga-y-queso",
+   "nombre": "Acelga y queso",
+   "tipo": "Tarta",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "jamon-y-queso",
+   "nombre": "Jamón y queso",
+   "tipo": "Tarta",
+   "proteina": "Cerdo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "jamon-queso-huevo-y-tomate",
+   "nombre": "Jamón, queso, huevo y tomate",
+   "tipo": "Tarta",
+   "proteina": "Cerdo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "acelga-huevo-y-queso",
+   "nombre": "Acelga, huevo y queso",
+   "tipo": "Tarta",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "matambre-de-cerdo-a-la-pizza-con-guarnicion",
+   "nombre": "Matambre de cerdo a la pizza con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "croquetas-de-cerdo-y-espinaca-con-guarnicion",
+   "nombre": "Croquetas de cerdo y espinaca con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "zapallitos-rellenos-de-carne-y-queso-con-guarnicion",
+   "nombre": "Zapallitos rellenos de carne y queso con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "bondiola-a-la-crema-de-cebolla-con-guarnicion",
+   "nombre": "Bondiola a la crema de cebolla con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "bondiola-a-la-cerveza-con-guarnicion",
+   "nombre": "Bondiola a la cerveza con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "albondigas-de-carne-con-salsa-con-guarnicion",
+   "nombre": "Albóndigas de carne con salsa, con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "matambrito-de-pollo-relleno-con-guarnicion",
+   "nombre": "Matambrito de pollo relleno con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "bife-a-la-criolla-con-guarnicion",
+   "nombre": "Bife a la criolla con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "bunuelos-de-espinaca-banados-en-salsa-blanca-con-queso",
+   "nombre": "Buñuelos de espinaca bañados en salsa blanca con queso",
+   "tipo": "Clásico",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "canelones-de-calabaza-choclo-y-queso",
+   "nombre": "Canelones de calabaza, choclo y queso",
+   "tipo": "Pasta",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "canelones-de-pollo-y-verdura",
+   "nombre": "Canelones de pollo y verdura",
+   "tipo": "Pasta",
+   "proteina": "Pollo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "lasana-de-verdura-ricota-jamon-y-queso",
+   "nombre": "Lasaña de verdura, ricota, jamón y queso",
+   "tipo": "Pasta",
+   "proteina": "Cerdo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "milanesa-de-carne-a-la-florentina-con-guarnicion",
+   "nombre": "Milanesa de carne a la florentina con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Carne",
+   "conGuarnicion": true
+  },
+  {
+   "id": "noquis-de-espinaca-con-salsa-bolognesa",
+   "nombre": "Ñoquis de espinaca con salsa bolognesa",
+   "tipo": "Pasta",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "noquis-de-papa-con-salsa-bolognesa",
+   "nombre": "Ñoquis de papa con salsa bolognesa",
+   "tipo": "Pasta",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "pastel-de-bondiola-y-calabaza",
+   "nombre": "Pastel de bondiola y calabaza",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": false
+  },
+  {
+   "id": "pechito-de-cerdo-al-horno-con-guarnicion",
+   "nombre": "Pechito de cerdo al horno con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "pescado-al-papillote-con-guarnicion",
+   "nombre": "Pescado al papillote con guarnición",
+   "tipo": "Light",
+   "proteina": "Pescado",
+   "conGuarnicion": true
+  },
+  {
+   "id": "pollo-a-la-portuguesa-con-guarnicion",
+   "nombre": "Pollo a la portuguesa con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "pollo-al-ajillo-con-guarnicion",
+   "nombre": "Pollo al ajillo con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "solomillo-a-la-mostaza-con-guarnicion",
+   "nombre": "Solomillo a la mostaza con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Cerdo",
+   "conGuarnicion": true
+  },
+  {
+   "id": "calabaza-puerro-y-queso",
+   "nombre": "Calabaza, puerro y queso",
+   "tipo": "Tarta",
+   "proteina": "Vegetariano",
+   "conGuarnicion": false
+  },
+  {
+   "id": "pollo-mediterraneo-con-guarnicion",
+   "nombre": "Pollo mediterraneo con guarnición",
+   "tipo": "Clásico",
+   "proteina": "Pollo",
+   "conGuarnicion": true
+  }
+ ]
+}
