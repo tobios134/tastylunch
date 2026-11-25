@@ -11,14 +11,14 @@ $("#sl-catering").textContent = cfg.slogan.catering + ".";
 // Cifras
 const cifras = [
   [viandas.platos.length + "+", "platos para elegir"],
-  [viandas.pesoGramos + " g", "por vianda"],
+  [viandas.pesoGramos + " g", "por vianda (tartas individuales)"],
   ["$0", "envío de viandas"],
   [cfg.catering.zonas.length, "zonas de catering"],
 ];
 $("#cifras").innerHTML = cifras.map(([n, t]) => `<div class="cifra"><div class="n">${n}</div><div class="t">${t}</div></div>`).join("");
 
 // Packs
-$("#packs-sub").textContent = `Cada vianda suelta cuesta ${fmt(viandas.precioUnitario)}. Todas pesan ${viandas.pesoGramos} g y podés mezclar los platos que quieras.`;
+$("#packs-sub").textContent = `Cada vianda suelta cuesta ${fmt(viandas.precioUnitario)}. Pesan ${viandas.pesoGramos} g (las tartas son individuales) y podés mezclar los platos que quieras.`;
 const mejor = Math.max(...viandas.packs.map((p) => p.cantidad));
 $("#packs").innerHTML = viandas.packs.map((p) => {
   const porUnidad = p.precio / p.cantidad;

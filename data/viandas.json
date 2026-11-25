@@ -2,6 +2,9 @@
  "_nota": "Datos de viandas. Editar precios/packs aqui. Los platos se generan desde menu_tasty.xlsx. Para agregar foto a un plato: \"foto\": \"assets/img/viandas/archivo.jpg\"",
  "precioUnitario": 12000,
  "pesoGramos": 500,
+ "tiposIndividuales": [
+  "Tarta"
+ ],
  "minimoViandas": 10,
  "todosConGuarnicion": false,
  "fotoPorDefecto": "assets/img/viandas/pollo-al-horno.jpg",
@@ -10,6 +13,9 @@
   "pastel-de-papa": "assets/img/viandas/pastel-de-papa.jpg",
   "pollo-a-la-toscana-crema-de-espinaca-tomate-y-queso-con-guarnicion": "assets/img/viandas/pollo-a-la-toscana.jpg",
   "pollo-al-horno-pata-y-muslo-sin-piel-con-guarnicion": "assets/img/viandas/pollo-al-horno.jpg"
+ },
+ "fotosPorTipo": {
+  "Tarta": "assets/img/viandas/tarta.jpg"
  },
  "packs": [
   {

@@ -8,11 +8,12 @@ const CLAVE = "tasty-viandas-carrito";
 const CLAVE_FORM = "tasty-viandas-datos";
 
 const EMOJI = { Vegetariano: "🥬", Pollo: "🍗", Carne: "🥩", Cerdo: "🥓", Pescado: "🐟", "Sin definir": "🍽️" };
+const individual = (p) => (datos.tiposIndividuales || []).includes(p.tipo);
 const conGuarnicion = (p) => datos.todosConGuarnicion || p.conGuarnicion;
-const fotoDe = (p) => datos.fotos?.[p.id] || p.foto || datos.fotoPorDefecto;
+const fotoDe = (p) => datos.fotos?.[p.id] || p.foto || datos.fotosPorTipo?.[p.tipo] || datos.fotoPorDefecto;
 const porId = new Map(platos.map((p) => [p.id, p]));
 
-$("#intro").textContent = `${cfg.slogan.viandas}. Cada vianda pesa ${pesoGramos} g, pedido mínimo de ${minimo} viandas y envío sin costo.`;
+$("#intro").textContent = `${cfg.slogan.viandas}. Cada vianda pesa ${pesoGramos} g (las tartas son individuales), pedido mínimo de ${minimo} viandas y envío sin costo.`;
 
 /* ---------- Precio óptimo: mejor combinación de packs + sueltas ---------- */
 function calcularPrecio(n) {
@@ -98,7 +99,7 @@ function renderGrilla() {
       </div>
       <div class="plato-cuerpo">
         <h3>${esc(p.nombre)}</h3>
-        <div class="plato-meta">${pesoGramos} g · ${esc(p.proteina)}${conGuarnicion(p) && !/guarnición/i.test(p.nombre) ? " · con guarnición" : ""}</div>
+        <div class="plato-meta">${individual(p) ? "Individual" : pesoGramos + " g"} · ${esc(p.proteina)}${conGuarnicion(p) && !/guarnición/i.test(p.nombre) ? " · con guarnición" : ""}</div>
         ${conGuarnicion(p) ? `<select aria-label="Guarnición de ${esc(p.nombre)}">${HTML_GUAR}</select>` : ""}
         <button class="btn btn-primario btn-chico" type="button" data-accion="agregar">+ Agregar</button>
       </div>
@@ -157,7 +158,7 @@ function renderLineas() {
   const sig = packs.filter((p) => p.cantidad > n && p.cantidad - n <= 4).sort((a, b) => a.cantidad - b.cantidad)[0];
   res.innerHTML = `
     <div class="resumen">
-      <div class="fila"><strong>${n} ${n === 1 ? "vianda" : "viandas"}</strong><span>${(n * pesoGramos / 1000).toLocaleString("es-AR")} kg en total</span></div>
+      <div class="fila"><strong>${n} ${n === 1 ? "vianda" : "viandas"}</strong><span></span></div>
       ${falta > 0 ? `<div class="progreso"><div style="width:${Math.round((n / minimo) * 100)}%"></div></div><div class="fila"><span>Pedido mínimo: ${minimo} viandas. Te ${falta === 1 ? "falta 1" : "faltan " + falta}.</span></div>` : ""}
       ${r.partes.map((p) => `<div class="fila"><span>${p.texto}</span><span>${fmt(p.monto)}</span></div>`).join("")}
       ${r.ahorro > 0 ? `<div class="fila ahorro-txt"><span>Ahorro por packs</span><span>− ${fmt(r.ahorro)}</span></div>` : ""}
@@ -274,7 +275,7 @@ $("#enviar").addEventListener("click", () => {
   const msg = [
     "¡Hola Tasty Lunch! Quiero hacer un pedido de viandas:", "",
     lineas, "",
-    `Total: ${n} viandas de ${pesoGramos} g`,
+    `Total: ${n} viandas`,
     ...r.partes.map((p) => `- ${p.texto}: ${fmt(p.monto)}`),
     `TOTAL A PAGAR: ${fmt(r.total)} (envío incluido)`, "",
     `Entrega: ${f.texto}, ${form.franja.value.toLowerCase()}`,
