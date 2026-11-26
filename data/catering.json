@@ -168,7 +168,8 @@
           "25": 155000,
           "30": 177000,
           "40": 199000
-        }
+        },
+        "foto": "assets/img/catering/pernil.jpg"
       },
       {
         "id": "bondiola",
@@ -180,7 +181,8 @@
           "25": 159000,
           "30": 179000,
           "40": 205000
-        }
+        },
+        "foto": "assets/img/catering/bondiola.jpg"
       },
       {
         "id": "carne",
@@ -192,7 +194,8 @@
           "25": 199000,
           "30": 227000,
           "40": 255000
-        }
+        },
+        "foto": "assets/img/catering/carne-braseada.jpg"
       }
     ],
     "tamanos": {
@@ -207,8 +210,9 @@
     "id": "picada",
     "nombre": "Picada",
     "precio": 10000,
-    "personasMin": 20,
-    "detalle": "Para 20 personas o más. Lomito a las finas hierbas, jamón cocido, fiambre de bondiola, queso saborizado con pimentón, roquefort, salame, jamón crudo, leberwurst, cantimpalo y 3 tipos de quesos, con tabla, palillos y pan."
+    "personasMin": 10,
+    "detalle": "Para 10 personas o más. Lomito a las finas hierbas, jamón cocido, fiambre de bondiola, queso saborizado con pimentón, roquefort, salame, jamón crudo, leberwurst, cantimpalo y 3 tipos de quesos, con tabla, palillos y pan.",
+    "foto": "assets/img/catering/picada.jpg"
   },
   "piezas": {
     "titulo": "Armá tu pedido por piezas",

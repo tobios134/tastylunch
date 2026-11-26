@@ -10,10 +10,10 @@ $("#sl-catering").textContent = cfg.slogan.catering + ".";
 
 // Cifras
 const cifras = [
-  [viandas.platos.length + "+", "platos para elegir"],
-  [viandas.pesoGramos + " g", "por vianda (tartas individuales)"],
-  ["$0", "envío de viandas"],
-  [cfg.catering.zonas.length, "zonas de catering"],
+  ["+" + Math.floor(viandas.platos.length / 100) * 100, "platos para elegir"],
+  [viandas.pesoGramos + " g", "pesa cada vianda"],
+  ["Envío", "sin cargo"],
+  ["Todos", "los medios de pago"],
 ];
 $("#cifras").innerHTML = cifras.map(([n, t]) => `<div class="cifra"><div class="n">${n}</div><div class="t">${t}</div></div>`).join("");
 
@@ -48,3 +48,5 @@ const r = cfg.redes;
 $("#redes").innerHTML = [
   [r.instagramViandas, "Instagram"], [r.instagramEmpresas, "Instagram empresas"], [r.tiktok, "TikTok"], [r.facebook, "Facebook"],
 ].map(([x, n]) => `<a href="${x.url}" target="_blank" rel="noopener">${n} @${esc(x.usuario)}</a>`).join("");
+
+$("#envio-catering").textContent = `envío sin cargo desde ${fmt(cfg.catering.envioGratisDesde)}`;

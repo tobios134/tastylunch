@@ -13,7 +13,13 @@ const conGuarnicion = (p) => datos.todosConGuarnicion || p.conGuarnicion;
 const fotoDe = (p) => datos.fotos?.[p.id] || p.foto || datos.fotosPorTipo?.[p.tipo] || datos.fotoPorDefecto;
 const porId = new Map(platos.map((p) => [p.id, p]));
 
-$("#intro").textContent = `${cfg.slogan.viandas}. Cada vianda pesa ${pesoGramos} g (las tartas son individuales), pedido mínimo de ${minimo} viandas y envío sin costo.`;
+$("#intro").textContent = `${cfg.slogan.viandas}.`;
+$("#intro-lista").innerHTML = [
+  `Cada vianda pesa ${pesoGramos} g`,
+  `Las tartas son individuales${datos.tartaDiametroCm ? ` (${datos.tartaDiametroCm} cm)` : ""}`,
+  `Pedido mínimo de ${minimo} viandas`,
+  "Envío sin costo",
+].map((t) => `<li>${esc(t)}</li>`).join("");
 
 /* ---------- Precio óptimo: mejor combinación de packs + sueltas ---------- */
 function calcularPrecio(n) {

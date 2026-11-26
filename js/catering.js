@@ -6,8 +6,8 @@ const CLAVE = "tasty-catering-carrito";
 const CLAVE_FORM = "tasty-catering-datos";
 const minDias = cfg.catering.anticipacionMinDias, maxMeses = cfg.catering.anticipacionMaxMeses;
 
-$("#intro").textContent = `${cfg.slogan.catering}. Catálogo ${cfg.catering.temporada}.`;
-$("#aviso").innerHTML = `<strong>Reservas:</strong> con un mínimo de ${minDias} días y un máximo de ${maxMeses} meses de anticipación. Seña del 50% por transferencia, o 100% con tarjeta. Los precios son orientativos: te confirmamos el presupuesto final por WhatsApp.`;
+$("#intro").innerHTML = `${esc(cfg.slogan.catering)}.<br>Catálogo ${esc(cfg.catering.temporada)}`;
+$("#aviso").innerHTML = `<strong>Reservas:</strong> con un mínimo de ${minDias} días y un máximo de ${maxMeses} meses de anticipación.<br><strong>Seña:</strong> del 50% por transferencia, o 100% con tarjeta.<br><strong>Los precios son orientativos:</strong> te confirmamos el presupuesto final por WhatsApp.`;
 
 /* ---------- Catálogo normalizado: id -> item ---------- */
 // tipo: "combo" (precio total), "persona" (precio por persona, con mínimo), "bandeja" (cantidad fija por bandeja)
@@ -17,7 +17,7 @@ cat.combos10a15.items.forEach((c) => add({ id: c.id, nombre: `Combo 10 a 15 pers
 cat.combos20mas.items.forEach((c) => add({ id: c.id, nombre: `Combo 20 o más personas – ${c.nombre}`, detalle: c.detalle, precio: c.precio, tipo: "persona", min: cat.combos20mas.personasMin }));
 cat.braseados.carnes.forEach((c) => Object.entries(c.precios).forEach(([p, precio]) =>
   add({ id: `${c.id}-${p}`, nombre: `${c.nombre} para ${p} personas`, detalle: [cat.braseados.tamanos[p]], precio, tipo: "combo" })));
-add({ id: cat.picada.id, nombre: "Picada", detalle: [cat.picada.detalle], precio: cat.picada.precio, tipo: "persona", min: cat.picada.personasMin });
+add({ id: cat.picada.id, nombre: "Picada", foto: cat.picada.foto, detalle: [cat.picada.detalle], precio: cat.picada.precio, tipo: "persona", min: cat.picada.personasMin });
 cat.piezas.grupos.forEach((g) => g.items.forEach((p) => add({ id: p.id, nombre: p.nombre, detalle: p.detalle ? [p.detalle] : [], precio: p.precio, tipo: "bandeja", cantidad: p.cantidad })));
 
 /* ---------- Estado ---------- */
@@ -38,7 +38,8 @@ const comboCard = (c) => `
   </article>`;
 
 const personaCard = (c, min) => `
-  <article class="combo">
+  <article class="combo${c.foto ? " con-foto" : ""}">
+    ${c.foto ? `<img class="combo-foto" src="${esc(c.foto)}" alt="${esc(c.nombre)}" loading="lazy">` : ""}
     <h3>${esc(c.nombre)}</h3>
     ${lista(c.detalle)}
     <div class="precio">${fmt(c.precio)} <small>aprox. por persona</small></div>
@@ -50,7 +51,8 @@ const personaCard = (c, min) => `
 
 const TAM = Object.keys(cat.braseados.tamanos);
 const braseadoCard = (c) => `
-  <article class="combo" data-carne="${c.id}">
+  <article class="combo con-foto" data-carne="${c.id}">
+    ${c.foto ? `<img class="combo-foto" src="${esc(c.foto)}" alt="${esc(c.nombre)}" loading="lazy">` : ""}
     <h3>${esc(c.nombre)}</h3>
     <p style="margin:0;font-size:.9rem">${esc(c.nota)}</p>
     <div class="sel-tamano" role="group" aria-label="Cantidad de personas">
@@ -154,7 +156,7 @@ function renderLineas() {
     </div>`;
   }).join("");
   res.innerHTML = `<div class="resumen"><div class="fila total"><span>Total estimado</span><span>${fmt(total())}</span></div>
-    <div class="fila" style="font-size:.85rem;color:var(--texto-suave)"><span>Envío a convenir. Presupuesto final a confirmar.</span></div></div>`;
+    <div class="fila" style="font-size:.85rem;color:var(--texto-suave)"><span>${total() >= cfg.catering.envioGratisDesde ? "Envío sin cargo." : `Envío sin cargo desde ${fmt(cfg.catering.envioGratisDesde)}; por debajo, a convenir.`} Presupuesto final a confirmar.</span></div></div>`;
 }
 
 $("#drawer-cuerpo").addEventListener("click", (e) => {
@@ -241,7 +243,7 @@ $("#enviar").addEventListener("click", () => {
     `Fecha del evento: ${d}/${m}/${y}`,
     `Personas: ${form.personas.value}`,
     `Tipo de evento: ${form.evento.value}`,
-    envio ? `Envío a: ${form.direccion.value.trim()} (${form.zona.value})` : "Retiro en Villa Ballester",
+    envio ? `Envío a: ${form.direccion.value.trim()} (${form.zona.value})${total() >= cfg.catering.envioGratisDesde ? " – sin cargo" : ""}` : "Retiro en Villa Ballester",
     `Nombre: ${form.nombre.value.trim()}`,
     form.comentarios.value.trim() ? `Comentarios: ${form.comentarios.value.trim()}` : "",
   ].filter((x, i, a) => x !== "" || a[i - 1] !== "").join("\n");

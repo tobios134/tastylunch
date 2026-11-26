@@ -154,6 +154,9 @@ body.con-barra .whats-flotante { bottom: 5.2rem; }
 .chip:hover { border-color: var(--marron); }
 .chip[aria-pressed="true"] { background: var(--marron); color: #fff; border-color: var(--marron); }
 .buscador { flex: 1 1 220px; padding: .65rem 1rem; border: 1px solid var(--linea); border-radius: var(--r); font: 1rem var(--f-texto); background: #fff; color: var(--texto); min-height: 46px; }
+.intro-lista { list-style: none; margin: .6rem 0 0; padding: 0; }
+.intro-lista li { padding-left: 1.5rem; position: relative; margin-bottom: .2rem; }
+.intro-lista li::before { content: "→"; position: absolute; left: 0; color: var(--rojo); }
 .contador { color: var(--texto-suave); font-size: .85rem; margin: 1.2rem 0 .8rem; }
 
 /* Platos */
@@ -214,6 +217,8 @@ label.campo > span { display: block; margin-bottom: .25rem; color: var(--texto-s
 .combo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.2rem; }
 .combo { background: #fff; border: 1px solid var(--linea); border-radius: var(--r); padding: 1.4rem; display: flex; flex-direction: column; gap: .7rem; }
 .combo h3 { margin: 0; }
+.combo.con-foto { padding-top: 0; overflow: hidden; }
+.combo-foto { display: block; width: calc(100% + 2.8rem); max-width: none; margin: 0 -1.4rem .3rem; aspect-ratio: 1 / 1; height: auto; object-fit: cover; }
 .combo ul { margin: 0; padding-left: 1.1rem; font-size: .9rem; color: var(--texto-suave); flex: 1; }
 .combo .precio { font: 400 1.6rem var(--f-sub); color: var(--rojo); }
 .combo .precio small { font: 400 .82rem var(--f-texto); color: var(--texto-suave); }

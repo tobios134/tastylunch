@@ -2,6 +2,7 @@
  "_nota": "Datos de viandas. Editar precios/packs aqui. Los platos se generan desde menu_tasty.xlsx. Para agregar foto a un plato: \"foto\": \"assets/img/viandas/archivo.jpg\"",
  "precioUnitario": 12000,
  "pesoGramos": 500,
+  "tartaDiametroCm": 14,
  "tiposIndividuales": [
   "Tarta"
  ],

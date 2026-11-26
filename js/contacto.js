@@ -1,4 +1,4 @@
-import { initLayout, $, esc, waLink } from "./common.js";
+import { initLayout, $, esc, fmt, waLink } from "./common.js";
 
 const cfg = await initLayout("contacto.html");
 const r = cfg.redes;
@@ -19,7 +19,7 @@ $("#contacto").innerHTML = `
     <p>${cfg.viandas.zonas.map(esc).join(", ")}. Envío sin costo.</p>
     <p>${Object.values(cfg.viandas.entrega).map((d) => `${d.nombre} de ${d.desde} a ${d.hasta} hs`).join("<br>")}</p></div>
   <div class="tarjeta"><h3>Catering</h3>
-    <p>Envíos a ${cfg.catering.zonas.map(esc).join(", ")}. Consultá el costo del envío.</p>
+    <p>Envíos a ${cfg.catering.zonas.map(esc).join(", ")}. Envío sin cargo desde ${fmt(cfg.catering.envioGratisDesde)}.</p>
     <p>Reservá con ${cfg.catering.anticipacionMinDias} días de anticipación como mínimo y hasta ${cfg.catering.anticipacionMaxMeses} meses antes.</p></div>
   <div class="tarjeta"><h3>Punto de retiro (catering)</h3>
     <p>${esc(cfg.retiro.direccion)}<br>${esc(cfg.retiro.horario)}.</p><p>${esc(cfg.retiro.nota)}</p></div>`;

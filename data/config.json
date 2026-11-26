@@ -71,6 +71,7 @@
       "Zona Oeste",
       "Zona Sur"
     ],
+    "envioGratisDesde": 150000,
     "anticipacionMinDias": 10,
     "anticipacionMaxMeses": 2
   }
